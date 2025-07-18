@@ -1,4 +1,15 @@
 ---
+title: Additional Features in Roo Code - Suggested Responses, TTS, and Language Support
+description: Explore additional Roo Code features including suggested responses for faster interaction, text-to-speech capabilities, and support for 14 languages.
+keywords:
+  - additional features
+  - suggested responses
+  - text to speech
+  - TTS
+  - language support
+  - multilingual
+  - accessibility
+image: /img/social-share.jpg
 sidebar_label: Additional Features
 ---
 

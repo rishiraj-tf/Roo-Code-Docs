@@ -1,3 +1,16 @@
+---
+title: Maestro Project - Orchestrated Development Team for Roo Code
+description: A comprehensive system of specialized Roo modes working as an integrated development team, managing the entire software lifecycle
+keywords:
+  - maestro project
+  - roo code orchestration
+  - specialized modes
+  - development lifecycle
+  - shariqriazz
+  - integrated development
+image: /img/social-share.jpg
+---
+
 # Maestro Project by shariqriazz
 
 [View Project on GitHub](https://github.com/shariqriazz/maestro)

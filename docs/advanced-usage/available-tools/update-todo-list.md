@@ -1,3 +1,19 @@
+---
+title: update_todo_list Tool - Interactive Task Management in Roo Code
+description: Learn how update_todo_list creates dynamic TODO lists with status tracking, enabling step-by-step task management for complex workflows in Roo Code.
+keywords:
+  - update_todo_list
+  - Roo Code tools
+  - task management
+  - TODO lists
+  - workflow tracking
+  - checklist management
+  - task status
+  - interactive UI
+  - VS Code AI
+image: /img/social-share.jpg
+---
+
 # update_todo_list
 
 The `update_todo_list` tool enables dynamic, interactive task management within the chat interface. It replaces the entire TODO list with an updated checklist, ensuring that task status is always current and providing step-by-step tracking for complex, multi-step workflows.

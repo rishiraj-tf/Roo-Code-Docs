@@ -1,4 +1,14 @@
 ---
+title: Using .rooignore in Roo Code - Control File Access and Protect Sensitive Data
+description: Learn how to use .rooignore files to control Roo Code's file access, protect sensitive information, and manage which files the AI can read or modify.
+keywords:
+  - rooignore
+  - file access control
+  - sensitive data protection
+  - gitignore syntax
+  - file permissions
+  - security
+image: /img/social-share.jpg
 sidebar_label: .rooignore
 ---
 

@@ -1,5 +1,14 @@
 ---
 sidebar_label: 'Footgun Prompting'
+title: Footgun Prompting - Override System Prompts in Roo Code
+description: Advanced guide to overriding system prompts in Roo Code. Learn how to customize AI behavior with caution using system prompt overrides.
+keywords:
+  - footgun prompting
+  - system prompt override
+  - advanced customization
+  - Roo Code configuration
+  - custom prompts
+image: /img/social-share.jpg
 ---
 
 # Footgun Prompting: Override System Prompts

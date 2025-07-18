@@ -1,5 +1,18 @@
 ---
 sidebar_label: OpenAI
+title: OpenAI Integration - Use GPT-4o and o1 Models with Roo Code
+description: Connect Roo Code to OpenAI's official API for access to GPT-4o, o1, and o3-mini models with advanced reasoning capabilities.
+keywords:
+  - OpenAI
+  - GPT-4o
+  - o1 models
+  - o3-mini
+  - Roo Code
+  - AI integration
+  - reasoning models
+  - API key
+  - official OpenAI API
+image: /img/social-share.jpg
 ---
 
 # Using OpenAI With Roo Code

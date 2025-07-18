@@ -1,5 +1,18 @@
 ---
 sidebar_label: Glama
+title: Glama Provider for Roo Code - Unified AI Model Access
+description: Access multiple AI models through Glama's unified API in Roo Code. Use Claude, OpenAI, and other models with prompt caching and cost tracking.
+keywords:
+  - glama
+  - glama ai
+  - roo code
+  - api provider
+  - unified api
+  - claude models
+  - openai models
+  - prompt caching
+  - cost tracking
+image: /img/social-share.jpg
 ---
 
 # Using Glama With Roo Code

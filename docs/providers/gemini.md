@@ -1,5 +1,18 @@
 ---
 sidebar_label: Google Gemini
+title: Google Gemini Provider for Roo Code - Gemini AI Models
+description: Use Google's Gemini AI models with Roo Code. Configure Gemini Flash, Pro, and experimental models for your development workflow.
+keywords:
+  - google gemini
+  - gemini ai
+  - roo code
+  - api provider
+  - gemini flash
+  - gemini pro
+  - google ai
+  - gemini models
+  - ai studio
+image: /img/social-share.jpg
 ---
 
 # Using Google Gemini With Roo Code

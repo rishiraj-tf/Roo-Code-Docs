@@ -1,3 +1,17 @@
+---
+title: Diagnostics Integration in Roo Code - AI-Powered Error Detection and Fixes
+description: Leverage Roo Code's integration with VSCode's Problems panel to automatically detect, understand, and fix code errors, warnings, and linting issues.
+keywords:
+  - diagnostics integration
+  - error detection
+  - problems panel
+  - code fixes
+  - linting
+  - language server
+  - automatic error fixing
+image: /img/social-share.jpg
+---
+
 # Diagnostics Integration
 
 Roo Code provides intelligent integration with VSCode's Problems panel, allowing the AI assistant to understand and help fix code errors, warnings, and other issues detected by language servers, linters, and other diagnostic providers.

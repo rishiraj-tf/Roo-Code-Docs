@@ -1,3 +1,17 @@
+---
+title: Context Mentions in Roo Code - Reference Files, Folders & More
+description: Learn how to use context mentions (@) in Roo Code to reference files, folders, problems, terminal output, and Git commits for more accurate AI assistance.
+keywords:
+  - "Roo Code context mentions"
+  - "@ mentions"
+  - "file references"
+  - "folder mentions"
+  - "problems panel"
+  - "terminal mentions"
+  - "Git integration"
+image: /img/social-share.jpg
+---
+
 # Context Mentions
 
 Context mentions are a powerful way to provide Roo Code with specific information about your project, allowing it to perform tasks more accurately and efficiently. You can use mentions to refer to files, folders, problems, and Git commits. Context mentions start with the `@` symbol.

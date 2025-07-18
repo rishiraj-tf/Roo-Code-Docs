@@ -1,3 +1,17 @@
+---
+title: VibeMode - Natural Language Programming with Continuous Testing
+description: Transform natural language descriptions into working code with VibeMode, embracing intuitive flow-based development and automated testing.
+keywords:
+  - natural language programming
+  - vibe coding
+  - flow-based development
+  - voice-to-text coding
+  - automated testing
+  - intuitive coding
+  - Roo Code custom mode
+image: /img/social-share.jpg
+---
+
 # VibeMode by richardwhiteii
 
 [View Author on GitHub](https://github.com/richardwhiteii)

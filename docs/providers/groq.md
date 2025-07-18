@@ -1,5 +1,18 @@
 ---
 sidebar_label: Groq
+title: Groq Provider for Roo Code - Ultra-Fast LLM Inference
+description: Configure Groq's high-speed LPU inference in Roo Code. Access Llama, Mixtral, and other models with significantly faster response times.
+keywords:
+  - groq
+  - groq cloud
+  - roo code
+  - api provider
+  - lpu
+  - fast inference
+  - llama models
+  - mixtral
+  - high speed ai
+image: /img/social-share.jpg
 ---
 
 # Using Groq With Roo Code

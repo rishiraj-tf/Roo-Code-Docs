@@ -1,3 +1,17 @@
+---
+title: Advanced Orchestrator - Enhanced Workflow Management Mode
+description: Strategic workflow orchestration mode that breaks down complex projects into subtasks and delegates to specialized modes efficiently
+keywords:
+  - advanced orchestrator
+  - workflow management
+  - task delegation
+  - complex projects
+  - iiwish
+  - mrubens
+  - context management
+image: /img/social-share.jpg
+---
+
 # Advanced Orchestrator by iiwish
 
 [View Author on GitHub](https://github.com/iiwish)

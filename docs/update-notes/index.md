@@ -1,3 +1,18 @@
+---
+title: Roo Code Update Notes - Complete Version History & Release Notes
+description: Browse all Roo Code release notes and version updates. Find detailed changelogs, new features, bug fixes, and improvements for each version.
+keywords:
+  - roo code updates
+  - release notes
+  - version history
+  - changelog
+  - new features
+  - bug fixes
+  - improvements
+  - roo code versions
+image: /img/social-share.jpg
+---
+
 # Update Notes
 
 This section contains notes about recent updates to Roo Code, listed by version number.

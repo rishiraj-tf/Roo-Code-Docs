@@ -1,4 +1,17 @@
 ---
+title: xAI Grok - Advanced AI Models with Reasoning in Roo Code
+description: Configure xAI's Grok models in Roo Code. Access Grok-3, Grok-2, and vision models with large context windows and reasoning capabilities.
+keywords:
+  - xAI
+  - Grok
+  - Roo Code
+  - AI models
+  - reasoning AI
+  - vision models
+  - large context
+  - Grok-3
+  - Grok-2
+image: /img/social-share.jpg
 sidebar_label: xAI (Grok)
 ---
 
