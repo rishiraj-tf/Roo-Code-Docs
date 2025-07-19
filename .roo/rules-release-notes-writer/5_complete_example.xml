@@ -138,6 +138,14 @@ Use update_todo_list to track your progress through these steps.
 <write_to_file>
 <path>docs/update-notes/v3.20.3.mdx</path>
 <content>
+---
+description: This release improves reliability and fixes large file handling.
+keywords:
+  - roo code 3.20.3
+  - reliability
+  - large file handling
+image: /img/social-share.jpg
+---
 # Roo Code 3.20.3 Release Notes (2025-01-13)
 
 This release improves reliability and fixes large file handling.
@@ -150,23 +158,3 @@ This release improves reliability and fixes large file handling.
 ## Provider Updates
 
 * **OpenAI**: Added support for new GPT-4 models (thanks provider-dev!) ([#1236](link))
-</content>
-<line_count>11</line_count>
-</write_to_file>
-      ]]></tool_use>
-      <note>Acknowledgments include PR author and issue reporter where applicable.</note>
-    </step>
-  </workflow>
-
-  <key_improvements>
-    <improvement>
-      <description>Subtask-based processing organizes the workflow and isolates errors.</description>
-    </improvement>
-    <improvement>
-      <description>Workflow extracts linked issues to acknowledge all contributors.</description>
-    </improvement>
-    <improvement>
-      <description>Subtasks write findings to a temp file, ensuring no data loss.</description>
-    </improvement>
-  </key_improvements>
-</complete_example>

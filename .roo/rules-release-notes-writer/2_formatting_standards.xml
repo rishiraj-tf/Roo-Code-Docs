@@ -19,6 +19,21 @@
   </file_naming_conventions>
 
   <file_structure>
+    <element name="frontmatter">
+      <description>All release notes must include frontmatter with a description, keywords, and a social share image. The title is generated automatically from the first H1 heading.</description>
+      <example>
+        <![CDATA[
+---
+description: A concise summary of the release.
+keywords:
+  - roo code x.y.z
+  - new features
+  - bug fixes
+image: /img/social-share.jpg
+---
+        ]]>
+      </example>
+    </element>
     <element name="title">
       <format># Roo Code X.Y.Z Release Notes (YYYY-MM-DD)</format>
       <requirements>
