@@ -1,0 +1,175 @@
+<discord_workflow_test_scenarios>
+  <overview>
+    Test scenarios to validate the Discord-only workflow functionality.
+    These tests ensure the mode correctly handles various user requests for Discord formatting.
+  </overview>
+
+  <test_scenarios>
+    <scenario id="1">
+      <name>Single existing version</name>
+      <user_input>Discord release notes for 3.23.14</user_input>
+      <expected_behavior>
+        1. Detect Discord-only workflow pattern
+        2. Parse version: 3.23.14
+        3. Check if docs/update-notes/v3.23.14.mdx exists
+        4. Read file and apply Discord transformations
+        5. Output formatted text with footer link
+      </expected_behavior>
+      <validation>
+        - No GitHub API calls made
+        - No files created or modified
+        - PR links removed from output
+        - Internal links converted to full URLs
+      </validation>
+    </scenario>
+
+    <scenario id="2">
+      <name>Multiple existing versions</name>
+      <user_input>Generate Discord format for v3.23.14, v3.23.15, v3.23.16</user_input>
+      <expected_behavior>
+        1. Detect Discord-only workflow pattern
+        2. Parse versions: 3.23.14, 3.23.15, 3.23.16
+        3. Check existence of all three files
+        4. Process each existing file
+        5. Output combined Discord announcement
+      </expected_behavior>
+      <validation>
+        - Each version gets its own section
+        - Footer includes links to all versions
+        - Consistent formatting across versions
+      </validation>
+    </scenario>
+
+    <scenario id="3">
+      <name>Mixed existing and missing versions</name>
+      <user_input>Discord announcement for 3.23.14, 3.23.99</user_input>
+      <expected_behavior>
+        1. Parse versions: 3.23.14, 3.23.99
+        2. Check files: v3.23.14.mdx exists, v3.23.99.mdx missing
+        3. Ask user how to proceed with missing version
+        4. Based on response, either:
+           - Process only existing version
+           - Offer to create missing release notes first
+      </expected_behavior>
+      <validation>
+        - Clear error message about missing version
+        - Actionable suggestions provided
+        - Graceful handling of partial success
+      </validation>
+    </scenario>
+
+    <scenario id="4">
+      <name>With compression request</name>
+      <user_input>Discord notes for 3.23.14, compress the bug fixes</user_input>
+      <expected_behavior>
+        1. Detect Discord-only workflow and compression flag
+        2. Process version with compression
+        3. Summarize bug fixes section
+        4. Output condensed format
+      </expected_behavior>
+      <validation>
+        - Bug fixes compressed into summary
+        - Major features remain expanded
+        - Contributor list preserved in summary
+      </validation>
+    </scenario>
+
+    <scenario id="5">
+      <name>Invalid version format</name>
+      <user_input>Discord release notes for 3.23</user_input>
+      <expected_behavior>
+        1. Detect incomplete version number
+        2. Ask for clarification
+        3. Suggest checking available versions
+      </expected_behavior>
+      <validation>
+        - Clear error about version format
+        - Helpful suggestions provided
+      </validation>
+    </scenario>
+
+    <scenario id="6">
+      <name>Ambiguous request (not Discord-specific)</name>
+      <user_input>Release notes for 3.23.14</user_input>
+      <expected_behavior>
+        1. Detect main workflow pattern (not Discord-only)
+        2. Proceed with full release notes creation
+        3. Fetch PRs from GitHub
+      </expected_behavior>
+      <validation>
+        - Does NOT trigger Discord-only workflow
+        - Follows standard release notes creation
+      </validation>
+    </scenario>
+
+    <scenario id="7">
+      <name>Discord with date range</name>
+      <user_input>Discord release notes for all versions from 3.23.10 to 3.23.14</user_input>
+      <expected_behavior>
+        1. Recognize range request
+        2. List files in update-notes directory
+        3. Find all versions in range
+        4. Process each found version
+      </expected_behavior>
+      <validation>
+        - Correctly identifies versions in range
+        - Processes in version order
+        - Combined output for all versions
+      </validation>
+    </scenario>
+  </test_scenarios>
+
+  <edge_cases>
+    <case name="empty_version_list">
+      <input>Discord release notes for</input>
+      <expected>Ask user to specify version numbers</expected>
+    </case>
+    
+    <case name="typo_in_command">
+      <input>Discrod release notes for 3.23.14</input>
+      <expected>May not trigger Discord workflow - handle gracefully</expected>
+    </case>
+    
+    <case name="very_long_version_list">
+      <input>Discord format for v3.23.1, v3.23.2, v3.23.3, ... (20+ versions)</input>
+      <expected>Process all but suggest breaking into smaller groups</expected>
+    </case>
+  </edge_cases>
+
+  <integration_tests>
+    <test name="workflow_switching">
+      <description>Ensure smooth transition between workflows</description>
+      <steps>
+        1. Start with Discord-only request
+        2. If version missing, offer to create it
+        3. If user accepts, switch to main workflow
+        4. After creation, return to Discord formatting
+      </steps>
+    </test>
+    
+    <test name="pattern_priority">
+      <description>Verify correct pattern matching priority</description>
+      <cases>
+        <case>
+          <input>Generate Discord-formatted release notes for version 3.23.14</input>
+          <should_match>subtask_discord (not discord_only)</should_match>
+        </case>
+        <case>
+          <input>Discord release notes for 3.23.14</input>
+          <should_match>discord_only</should_match>
+        </case>
+      </cases>
+    </test>
+  </integration_tests>
+
+  <performance_considerations>
+    <consideration>
+      <aspect>File reading efficiency</aspect>
+      <note>When processing multiple versions, read files sequentially to avoid memory issues</note>
+    </consideration>
+    <consideration>
+      <aspect>Output size</aspect>
+      <note>Discord has message length limits - warn if output exceeds 2000 characters</note>
+    </consideration>
+  </performance_considerations>
+</discord_workflow_test_scenarios>

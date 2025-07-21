@@ -2,14 +2,27 @@
   <mode_overview>
     Automates creating release notes for new Roo Code versions. Fetches pull requests
     from GitHub, analyzes changes, and generates notes based on doc standards.
+    Can also generate Discord-formatted notes for existing release versions.
   </mode_overview>
 
   <initialization_steps>
     <step number="1">
-      <action>Receive version number from user</action>
+      <action>Analyze user request type</action>
       <details>
-        User provides the new version number (e.g., 3.20.3) to start.
+        Determine if user wants to:
+        1. Create new release notes from scratch (e.g., "Create release notes for 3.20.3")
+        2. Generate Discord format for existing release (e.g., "Discord release notes for 3.20.3")
       </details>
+      <decision_point>
+        <if_discord_only>
+          <condition>User requests Discord format for existing version(s)</condition>
+          <action>Skip to discord_only_workflow</action>
+        </if_discord_only>
+        <if_create_new>
+          <condition>User requests to create new release notes</condition>
+          <action>Continue with standard workflow</action>
+        </if_create_new>
+      </decision_point>
     </step>
     
     <step number="2">
@@ -345,6 +358,71 @@
 			</steps>
 		</phase>
 	</main_workflow>
+
+	<discord_only_workflow>
+		<description>Direct workflow for generating Discord notes from existing release files.</description>
+		<trigger_patterns>
+			<pattern>Discord release notes for X.Y.Z</pattern>
+			<pattern>Generate Discord notes for vX.Y.Z</pattern>
+			<pattern>Discord format for versions X.Y.Z, A.B.C</pattern>
+			<pattern>Discord announcement for X.Y.Z</pattern>
+		</trigger_patterns>
+		
+		<steps>
+			<step number="1">
+				<action>Parse version numbers from request</action>
+				<details>
+					Extract one or more version numbers from the user's request.
+					Support formats: "3.20.3", "v3.20.3", multiple versions separated by commas.
+				</details>
+			</step>
+			
+			<step number="2">
+				<action>Verify release notes exist</action>
+				<details>
+					For each requested version, check if docs/update-notes/vX.Y.Z.mdx exists.
+				</details>
+				<tool>list_files</tool>
+				<error_handling>
+					<if_not_found>
+						<action>Inform user which versions don't have release notes</action>
+						<suggestion>Offer to create release notes first or skip missing versions</suggestion>
+					</if_not_found>
+				</error_handling>
+			</step>
+			
+			<step number="3">
+				<action>Process each version</action>
+				<details>
+					For each existing version file:
+					1. Read the release notes file
+					2. Apply Discord formatting transformations
+					3. Handle any compression requests
+					4. Generate output
+				</details>
+				<single_version>
+					<action>Generate Discord format directly</action>
+				</single_version>
+				<multiple_versions>
+					<action>Generate separate Discord format for each version</action>
+					<option>Combine into single announcement if requested</option>
+				</multiple_versions>
+			</step>
+			
+			<step number="4">
+				<action>Present Discord-formatted output</action>
+				<details>
+					Display the Discord-ready text for the user to copy.
+					Include any special formatting notes or suggestions.
+				</details>
+			</step>
+		</steps>
+		
+		<completion>
+			<action>Complete without creating PR or updating files</action>
+			<output>Discord-formatted text ready for posting</output>
+		</completion>
+	</discord_only_workflow>
 
 		<completion_criteria>
 		  <criterion>Release notes file created with correct formatting.</criterion>
