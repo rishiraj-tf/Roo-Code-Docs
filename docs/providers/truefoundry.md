@@ -1,8 +1,8 @@
 # TrueFoundry
 
-TrueFoundry's AI Gateway provides enterprise-grade access to multiple AI models through a unified, secure, and cost-optimized interface. By connecting Roo Code to TrueFoundry's AI Gateway, you can leverage advanced AI capabilities for code generation, debugging, and development tasks while benefiting from enterprise features including security, compliance, cost management, and access control.
+TrueFoundry's AI Gateway is an enterprise-grade platform that enables developers to access multiple AI models through a unified, secure, and cost-optimized interface. By connecting Roo Code to TrueFoundry's AI Gateway, you can leverage its AI capabilities for code generation, debugging, and development tasks while benefiting from enterprise features including security, compliance, cost management, and access control.
 
-**Get Started:** [Create Account](https://www.truefoundry.com/ai-gateway) | [Documentation](https://docs.truefoundry.com/) 
+**Get Started:** [Website](https://www.truefoundry.com/ai-gateway) | [Documentation](https://docs.truefoundry.com/gateway/intro-to-llm-gateway) 
 
 ## Why TrueFoundry?
 
@@ -16,7 +16,7 @@ TrueFoundry's AI Gateway provides enterprise-grade access to multiple AI models 
 
 Before integrating Roo Code with TrueFoundry, ensure you have:
 
-1. **TrueFoundry Account**: A TrueFoundry account with at least one model provider configured
+1. **TrueFoundry Account**: A TrueFoundry account with at least one model provider configured. Follow quick start guide [here](https://docs.truefoundry.com/gateway/quick-start)
 2. **Personal Access Token**: Generate a token by following the [TrueFoundry token generation guide](https://docs.truefoundry.com/gateway/roo-code)
 3. **Roo Code Extension**: Install Roo Code from the VS Code Marketplace
 
@@ -141,8 +141,10 @@ When suggesting code changes, always consider:
 TrueFoundry provides advanced cost tracking and budgeting:
 
 - **Usage Analytics**: Monitor API calls, tokens, and costs per project
-- **Budget Limits**: Set spending limits to control costs
+- **Budget Limits**: Set spending limits to control costs  
 - **Cost Attribution**: Track usage by team, project, or user
+
+[Learn more about Cost Management →](https://docs.truefoundry.com/gateway/cost-tracking)
 
 ### Security & Compliance
 
@@ -151,11 +153,15 @@ TrueFoundry provides advanced cost tracking and budgeting:
 - **Audit Logs**: Comprehensive logging for compliance requirements
 - **Content Filtering**: Built-in guardrails and content moderation
 
+[Learn more about Security & Compliance →](https://docs.truefoundry.com/gateway/guardrails-and-security)
+
 ### High Availability
 
 - **Load Balancing**: Automatic distribution across multiple model endpoints
 - **Fallback Support**: Automatic failover to backup models
 - **Rate Limiting**: Intelligent request throttling and queue management
+
+[Learn more about High Availability →](https://docs.truefoundry.com/gateway/load-balancing)
 
 ## Troubleshooting
 
@@ -179,16 +185,8 @@ TrueFoundry provides advanced cost tracking and budgeting:
 ### Getting Help
 
 - **TrueFoundry Documentation**: [https://docs.truefoundry.com/](https://docs.truefoundry.com/)
-- **TrueFoundry Support**: Contact through their support channels
+- **TrueFoundry Support**: [support@truefoundry.com](mailto:support@truefoundry.com)
 - **Roo Code Community**: Join our community for integration help
 
-## Next Steps
-
-Once integrated with TrueFoundry:
-
-1. **Explore Advanced Features**: Leverage TrueFoundry's enterprise capabilities
-2. **Optimize Your Workflow**: Configure multiple profiles for different tasks
-3. **Monitor Usage**: Use TrueFoundry's analytics to optimize costs and performance
-4. **Scale Your Team**: Set up access controls and usage policies for your organization
 
 All your Roo Code requests will now be routed through TrueFoundry's AI Gateway, providing you with enterprise-grade AI capabilities while maintaining security, cost control, and high availability.
