@@ -70,7 +70,7 @@ Before integrating Roo Code with TrueFoundry, ensure you have:
 Choose models based on your specific use cases:
 
 ### **Code Generation & Complex Tasks**
-- **`openai/gpt-4o`**: Best for complex code generation and reasoning tasks
+- **`openai-main/gpt-4o`**: Best for complex code generation and reasoning tasks
 - **`anthropic/claude-4-sonnet`**: Excellent for code understanding and following instructions
 
 
