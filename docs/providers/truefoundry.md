@@ -17,7 +17,7 @@ TrueFoundry's AI Gateway is an enterprise-grade platform that enables developers
 Before integrating Roo Code with TrueFoundry, ensure you have:
 
 1. **TrueFoundry Account**: A TrueFoundry account with at least one model provider configured. Follow quick start guide [here](https://docs.truefoundry.com/gateway/quick-start)
-2. **Personal Access Token**: Generate a token by following the [TrueFoundry token generation guide](https://docs.truefoundry.com/gateway/roo-code)
+2. **Personal Access Token**: Generate a token by following the [TrueFoundry token generation guide](https://docs.truefoundry.com/gateway/authentication)
 3. **Roo Code Extension**: Install Roo Code from the VS Code Marketplace
 
 ![Install Roo Code from VS Code Marketplace](/img/truefoundry/roo-code-marketplace-install.png)
@@ -70,8 +70,8 @@ Before integrating Roo Code with TrueFoundry, ensure you have:
 Choose models based on your specific use cases:
 
 ### **Code Generation & Complex Tasks**
-- **`openai-main/gpt-4o`**: Best for complex code generation and reasoning tasks
-- **`anthropic-main/claude-4-sonnet`**: Excellent for code understanding and following instructions
+- **`openai/gpt-4o`**: Best for complex code generation and reasoning tasks
+- **`anthropic/claude-4-sonnet`**: Excellent for code understanding and following instructions
 
 
 :::tip Model Names
@@ -136,7 +136,7 @@ When suggesting code changes, always consider:
 
 ## Enterprise Features
 
-### Cost Management
+### Analytics and Cost Management
 
 TrueFoundry provides advanced cost tracking and budgeting:
 
@@ -145,6 +145,8 @@ TrueFoundry provides advanced cost tracking and budgeting:
 - **Cost Attribution**: Track usage by team, project, or user
 
 [Learn more about Cost Management →](https://docs.truefoundry.com/gateway/cost-tracking)
+
+![Analytics and cost](/img/truefoundry/gateway-metrics.png)
 
 ### Security & Compliance
 
@@ -155,32 +157,13 @@ TrueFoundry provides advanced cost tracking and budgeting:
 
 [Learn more about Security & Compliance →](https://docs.truefoundry.com/gateway/guardrails-and-security)
 
-### High Availability
+### Gateway features
 
 - **Load Balancing**: Automatic distribution across multiple model endpoints
 - **Fallback Support**: Automatic failover to backup models
 - **Rate Limiting**: Intelligent request throttling and queue management
 
-[Learn more about High Availability →](https://docs.truefoundry.com/gateway/load-balancing)
-
-## Troubleshooting
-
-### Common Issues
-
-**Connection Errors**
-- Verify your base URL and API key are correct
-- Check that your TrueFoundry account has active model providers
-- Ensure your token has the necessary permissions
-
-**Model Not Found**
-- Use the exact model name from TrueFoundry's unified code snippet
-- Verify the model is available in your TrueFoundry configuration
-- Check if the model provider is properly configured
-
-**Rate Limiting**
-- Monitor your usage in TrueFoundry's dashboard
-- Adjust your rate limits if needed
-- Consider upgrading your plan for higher limits
+[Learn more about Gateway features →](https://docs.truefoundry.com/gateway/load-balancing)
 
 ### Getting Help
 
