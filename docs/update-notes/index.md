@@ -17,6 +17,14 @@ image: /img/social-share.jpg
 This section contains notes about recent updates to Roo Code, listed by version number.
 ---
 
+## Version 3.25
+
+*   [3.25.2](/update-notes/v3.25.2) (2025-07-29)
+*   [3.25.1](/update-notes/v3.25.1) (2025-07-29)
+*   [3.25.0](/update-notes/v3.25.0) (2025-07-29)
+
+---
+
 ## Version 3.24
 
 *   [3.24.0](/update-notes/v3.24.0) (2025-07-26)
