@@ -126,6 +126,7 @@ Critical fixes that improve stability and compatibility:
 * **Qdrant Deletion**: Gracefully handles deletion errors to prevent indexing interruption
 * **LM Studio Context Length**: Models now correctly display their actual context length instead of "1"
 * **Claude Code Errors**: ENOENT errors now show helpful installation guidance
+* **Claude Code Error Handling**: Fixed "spawn claude ENOENT" error when using Claude Code provider, now provides better error handling and installation guidance (thanks JamieJ1!)
 * **Multi-file Edit Fix**: Fixed issue where Git diff views interfered with file operations (thanks hassoncs, szermatt!) ([#6350](https://github.com/RooCodeInc/Roo-Code/pull/6350))
 * **Non-QWERTY Keyboard Support**: Fixed keyboard shortcuts for Dvorak, AZERTY, and other layouts (thanks shlgug!) ([#6162](https://github.com/RooCodeInc/Roo-Code/pull/6162))
 * **Mode Export/Import**: Fixed custom mode export to handle slug changes correctly ([#6186](https://github.com/RooCodeInc/Roo-Code/pull/6186))
@@ -153,6 +154,8 @@ Critical fixes that improve stability and compatibility:
 * **SambaNova Provider**: Integrated SambaNova as a new LLM provider offering high-speed inference and broader model selection (thanks snova-jorgep!) ([#6188](https://github.com/RooCodeInc/Roo-Code/pull/6188))
 * **Chutes AI**: Added zai-org/GLM-4.5-FP8 model support ([#6441](https://github.com/RooCodeInc/Roo-Code/pull/6441))
 * **OpenRouter**: Set horizon-alpha model max tokens to 32k ([#6470](https://github.com/RooCodeInc/Roo-Code/pull/6470))
+* **Horizon Beta Stealth Model via OpenRouter**: Optimized support for OpenRouter's new stealth model Horizon Beta with 32k max tokens for better response times. Thanks to OpenRouter for providing this free, improved version of Horizon Alpha!
+* **Type Definitions**: Updated @roo-code/types to v1.41.0 for latest type compatibility
 * **Databricks**: Added support for /invocations endpoints pattern (thanks adambrand!) ([#6317](https://github.com/RooCodeInc/Roo-Code/pull/6317))
 
 ### Misc. Improvements
@@ -172,3 +175,4 @@ Critical fixes that improve stability and compatibility:
 * **Mode Configuration**: Updated PR reviewer rules and mode configuration ([#6391](https://github.com/RooCodeInc/Roo-Code/pull/6391), [#6428](https://github.com/RooCodeInc/Roo-Code/pull/6428))
 * **Navigator Global Error**: Resolved errors by updating mammoth and bluebird dependencies ([#6363](https://github.com/RooCodeInc/Roo-Code/pull/6363))
 * **Nightly Build Fixes**: Resolved marketplace freezing issues with separate changelog ([#6449](https://github.com/RooCodeInc/Roo-Code/pull/6449))
+* **Cloud Provider Profile Sync**: Added support for syncing provider profiles from the cloud, enabling automatic synchronization across devices and team collaboration
