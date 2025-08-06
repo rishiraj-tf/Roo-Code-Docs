@@ -18,7 +18,7 @@ image: /img/social-share.jpg
 
 Z AI (Zhipu AI) provides advanced language models with the GLM-4.5 series. The provider offers region-aware routing with separate endpoints for international users and China mainland users.
 
-**Website:** [https://www.z.ai/](https://www.z.ai/) (International) | [https://open.bigmodel.cn/](https://open.bigmodel.cn/) (China)
+**Website:** [https://z.ai/model-api](https://z.ai/model-api) (International) | [https://open.bigmodel.cn/](https://open.bigmodel.cn/) (China)
 
 ---
 
@@ -26,7 +26,7 @@ Z AI (Zhipu AI) provides advanced language models with the GLM-4.5 series. The p
 
 ### International Users
 
-1. **Sign Up/Sign In:** Go to [https://www.z.ai/](https://www.z.ai/). Create an account or sign in.
+1. **Sign Up/Sign In:** Go to [https://z.ai/model-api](https://z.ai/model-api). Create an account or sign in.
 2. **Navigate to API Keys:** Access your account dashboard and find the API keys section.
 3. **Create a Key:** Generate a new API key for your application.
 4. **Copy the Key:** **Important:** Copy the API key immediately and store it securely.
