@@ -160,6 +160,7 @@ const sidebars: SidebarsConfig = {
         'providers/bedrock',
         'providers/cerebras',
         'providers/deepseek',
+        'providers/doubao',
         'providers/fireworks',
         'providers/chutes',
         'providers/gemini',
@@ -175,10 +176,12 @@ const sidebars: SidebarsConfig = {
         'providers/openai-compatible',
         'providers/openrouter',
         'providers/requesty',
+        'providers/sambanova',
         'providers/unbound',
         'providers/vertex',
         'providers/vscode-lm',
         'providers/xai',
+        'providers/zai',
       ]
     },
     {
