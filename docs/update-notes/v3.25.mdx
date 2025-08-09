@@ -96,6 +96,7 @@ This feature provides peace of mind when using expensive models or running long 
 
 Small changes that make a big difference in your daily workflow:
 
+* **Chat Input Focus**: The chat input now automatically focuses when creating a new chat via the + button, allowing you to start typing immediately
 * **Gemini 2.5 Pro Thinking Budget Flexibility**: The minimum thinking budget is reduced from 1024 to 128 tokens, perfect for tasks that need quick, focused responses without extensive reasoning. You'll need to manually adjust the thinking budget to 128 in your settings to take advantage of this feature.
 * **Multi-Folder Workspace Support**: Code indexing now works correctly across all folders in multi-folder workspaces
 * **Checkpoint Timing**: Checkpoints now save before file changes are made, allowing easy undo of unwanted modifications
@@ -130,6 +131,9 @@ Small changes that make a big difference in your daily workflow:
 
 Critical fixes that improve stability and compatibility:
 
+* **Token Calculation**: Fixed rounding errors that prevented certain models like GLM-4.5 from working properly by ensuring max output tokens are correctly rounded up
+* **XML Parsing**: Fixed errors when using the apply_diff tool with complex XML files containing special characters by implementing proper CDATA sections
+* **MCP Error Messages**: Fixed an issue where MCP server errors displayed raw translation keys instead of proper error messages
 * **Memory Leak Fix**: Resolved a critical memory leak in long conversations that was causing excessive memory usage and grey screens. Virtual scrolling now limits viewport rendering and optimizes caching for stable performance regardless of conversation length.
 * **Disabled MCP Servers**: Fixed issue where disabled MCP servers were still starting processes and consuming resources. Disabled servers now truly stay disabled with clear status indicators and immediate cleanup when MCP is globally disabled.
 * **MCP Server Refresh**: Settings changes no longer trigger unnecessary MCP server refreshes
@@ -170,6 +174,12 @@ Critical fixes that improve stability and compatibility:
 
 ### Provider Updates
 
+* **GPT-5 Model Support**: Added support for OpenAI's latest GPT-5 model family:
+  - `gpt-5-2025-08-07`: The full GPT-5 model, now set as the default for OpenAI Native provider
+  - `gpt-5-mini-2025-08-07`: A smaller, faster variant for quick responses
+  - `gpt-5-nano-2025-08-07`: The most compact version for resource-constrained scenarios
+* **GPT-5 Verbosity Controls**: New settings to control model output detail levels (low, medium, high), allowing you to fine-tune response length and detail based on your needs
+* **Fireworks AI Models**: Added GLM-4.5 series models (355B and 106B parameters with 128K context) and OpenAI gpt-oss models (20b for edge deployments, 120b for production use) to expand model selection options
 * **Claude Opus 4.1 Support**: Added support for the new Claude Opus 4.1 model across Anthropic, Claude Code, Bedrock, Vertex AI, and LiteLLM providers with 8192 max tokens, reasoning budget support, and prompt caching
 * **Z AI Provider**: Z AI (formerly Zhipu AI) is now available with GLM-4.5 series models, offering dual regional support for both international and mainland China users
 * **Fireworks AI Provider**: New provider offering hosted versions of popular open-source models like Kimi and Qwen
@@ -188,6 +198,7 @@ Critical fixes that improve stability and compatibility:
 
 ### Misc. Improvements
 
+* **Cloud Integration**: Reverted to using the npm package version of @roo-code/cloud for improved build stability and maintenance
 * **Slash Command Interpolation**: Skip interpolation for non-existent commands
 * **Linter Coverage**: Applied to locale README files
 * **Cloud Service Events**: Migrated from callbacks to event-based architecture
