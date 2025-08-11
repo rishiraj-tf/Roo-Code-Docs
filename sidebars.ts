@@ -168,6 +168,7 @@ const sidebars: SidebarsConfig = {
         'providers/groq',
         'providers/huggingface',
         'providers/human-relay',
+        'providers/io-intelligence',
         'providers/lmstudio',
         'providers/litellm',
         'providers/mistral',
@@ -211,7 +212,8 @@ const sidebars: SidebarsConfig = {
           label: '3.25',
           items: [
             { type: 'doc', id: 'update-notes/v3.25', label: '3.25 Combined' },
-            { type: 'doc', id: 'update-notes/v3.25.10', label: '3.25.10' },
+            { type: 'doc', id: 'update-notes/v3.25.11', label: '3.25.11' },
+                        { type: 'doc', id: 'update-notes/v3.25.10', label: '3.25.10' },
             { type: 'doc', id: 'update-notes/v3.25.9', label: '3.25.9' },
             { type: 'doc', id: 'update-notes/v3.25.8', label: '3.25.8' },
             { type: 'doc', id: 'update-notes/v3.25.7', label: '3.25.7' },
