@@ -14,7 +14,7 @@ image: /img/social-share.jpg
 
 # Roo Code Docs
 
-Roo Code (formerly Roo Cline) is an AI-powered autonomous coding agent that lives in your editor. It helps you code faster and smarter, whether you're starting a new project, maintaining existing code, or learning new technologies.
+Roo Code is an AI-powered autonomous coding agent that lives in your editor. It helps you code faster and smarter, whether you're starting a new project, maintaining existing code, or learning new technologies.
 
 ---
 
